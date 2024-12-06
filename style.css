@@ -41,27 +41,17 @@ button {
     border-radius: 5px;
     position: relative;
 }
-
-.result {
-    /* border: 1px dashed gray; */
-    /* border-radius: 5px; */
-    width: 95%;
+#operation {
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue;
     display: flex;
     justify-content: right;
     align-items: center;
-    height: 20px;
+    border-radius: 5px;
+    /* height: 25px;
     position: absolute;
-    bottom: 0px;
-}
-
-.operation {
-    width: 95%;
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    height: 25px;
-    position: absolute;
-    top: 0px;
+    top: 0px; */
 }
 
 .calc {
@@ -78,15 +68,27 @@ button {
 #clr {
     background-color: sandybrown;
 }
+#clr:hover {
+    background: rgb(243, 147, 63);
+}
 
 #dlt {
     background-color: rgb(207, 73, 73);
+}
+#dlt:hover {
+    background: rgb(227, 57, 57);
 }
 
 .op {
     background-color: azure;
 }
+.op:hover {
+    background: rgb(189, 228, 228);
+}
 
 .num {
     background-color: beige;
+}
+.num:hover {
+    background: rgb(236, 236, 169);
 }

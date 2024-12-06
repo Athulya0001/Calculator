@@ -1,17 +1,23 @@
-let add = document.getElementById('add');
-add.addEventListener("click", function(a,b){
-    let addidion = a + b;
-    console.log(addidion)
-})
+let operationInput = document.getElementById("operation");
 
-let subtract = document.getElementById("subtract");
-subtract.addEventListener("click",function(a,b){
-    let subtraction = a - b;
-    console.log(subtraction)
-})
+function Clear() {
+    operationInput.value = "";
+}
 
-let multiply = document.getElementById("multiply")
-multiply.addEventListener("click",function(a,b){
-    let multiplication = a * b;
-    console.log(multiplication)
+function Delete() {
+    operationInput.value = operationInput.value.slice(0, -1);
+}
+
+function Solve() {
+    let value = event.target.value;
+    operationInput.value += value;
+}
+
+function Result() {
+    try {
+        let result = eval(operationInput.value.replace(/x/g, '*'));
+        operationInput.value = result;
+    } catch (error) {
+        operationInput.value = "Error";
+    }
 }
