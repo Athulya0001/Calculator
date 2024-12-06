@@ -1,0 +1,92 @@
+body {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+}
+
+button {
+    border-radius: 3px;
+    border: 1px solid rgb(182, 178, 178);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    position: absolute;
+    top: 150px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 20px 5px;
+    background-color: rgb(210, 218, 224);
+}
+
+.display {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 90%;
+    background-color: aliceblue;
+    border: 1px solid grey;
+    border-radius: 5px;
+    position: relative;
+}
+
+.result {
+    /* border: 1px dashed gray; */
+    /* border-radius: 5px; */
+    width: 95%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 20px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.operation {
+    width: 95%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 25px;
+    position: absolute;
+    top: 0px;
+}
+
+.calc {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 8px;
+    column-gap: 6px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: rgb(164, 169, 173);
+    padding: 8px 5px;
+}
+
+#clr {
+    background-color: sandybrown;
+}
+
+#dlt {
+    background-color: rgb(207, 73, 73);
+}
+
+.op {
+    background-color: azure;
+}
+
+.num {
+    background-color: beige;
+}
