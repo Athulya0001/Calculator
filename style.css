@@ -1,5 +1,5 @@
 body {
-    background-color: whitesmoke;
+    background-color: #e9edf0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,6 +26,8 @@ button {
     position: absolute;
     top: 150px;
     border: 2px solid black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; */
     border-radius: 5px;
     padding: 20px 5px;
     background-color: rgb(210, 218, 224);
